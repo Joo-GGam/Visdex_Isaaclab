@@ -25,7 +25,7 @@ and one fixed link will be added for the tip. -->
   <link name="base_link">
     <visual>
       <geometry>
-        <mesh filename="package://allegro_hand_description/meshes/base_link.STL"/>
+        <mesh filename="allegro_digit/stl/base_link.STL"/>
       </geometry>
       <!-- LEFT -->
       <!-- <origin rpy="${-90*DEG2RAD} 0 0" xyz="0 0 0 "/> -->
@@ -36,9 +36,8 @@ and one fixed link will be added for the tip. -->
       </material>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="-0.009300 0 -0.0475"/>
       <geometry>
-        <box size="0.0408 0.1130 0.095"/>
+        <mesh filename="allegro_digit/collision/base_link_merged.STL"/>
       </geometry>
     </collision>
   </link>
@@ -49,15 +48,14 @@ and one fixed link will be added for the tip. -->
   <link name="link_0.0">
     <visual>
       <geometry>
-        <mesh filename="package://allegro_hand_description/meshes/link_0.0.STL"/>
+        <mesh filename="allegro_digit/stl/link_0.0.STL"/>
       </geometry>
       <material name="black"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://allegro_hand_description/meshes/link_0.0.STL"/>
+        <mesh filename="allegro_digit/collision/link_0.0_merged.STL"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0.0082"/>
     </collision>
   </link>
   <joint name="joint_0.0" type="revolute">
@@ -70,15 +68,14 @@ and one fixed link will be added for the tip. -->
   <link name="link_1.0">
     <visual>
       <geometry>
-        <mesh filename="package://allegro_hand_description/meshes/link_1.0.STL"/>
+        <mesh filename="allegro_digit/stl/link_1.0.STL"/>
       </geometry>
       <material name="black"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://allegro_hand_description/meshes/link_1.0.STL"/>
+        <mesh filename="allegro_digit/collision/link_1.0_merged.STL"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0.027"/>
     </collision>
   </link>
   <joint name="joint_1.0" type="revolute">
@@ -91,15 +88,14 @@ and one fixed link will be added for the tip. -->
   <link name="link_2.0">
     <visual>
       <geometry>
-        <mesh filename="package://allegro_hand_description/meshes/link_2.0.STL"/>
+        <mesh filename="allegro_digit/stl/link_2.0.STL"/>
       </geometry>
       <material name="black"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://allegro_hand_description/meshes/link_2.0.STL"/>
+        <mesh filename="allegro_digit/collision/link_2.0_merged.STL"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0.0192"/>
     </collision>
   </link>
   <joint name="joint_2.0" type="revolute">
@@ -112,15 +108,14 @@ and one fixed link will be added for the tip. -->
   <link name="link_3.0">
     <visual>
       <geometry>
-        <mesh filename="package://allegro_hand_description/meshes/link_3.0.STL"/>
+        <mesh filename="allegro_digit/stl/link_3.0.STL"/>
       </geometry>
       <material name="black"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://allegro_hand_description/meshes/link_3.0.STL"/>
+        <mesh filename="allegro_digit/collision/link_3.0_merged.STL"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0.01335"/>
     </collision>
   </link>
   <joint name="joint_3.0" type="revolute">
@@ -134,7 +129,7 @@ and one fixed link will be added for the tip. -->
     <link name="link_3.0_tip">
     <visual>
       <geometry>
-        <mesh filename="package://allegro_hand_description/meshes/digit.STL"/>
+        <mesh filename="allegro_digit/stl/digit.STL"/>
       </geometry>
       <material name="white">
         <color rgba=".9 .9 .9 1"/>
@@ -142,7 +137,7 @@ and one fixed link will be added for the tip. -->
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://allegro_hand_description/meshes/digit.STL"/>
+        <mesh filename="allegro_digit/collision/digit.STL"/>
       </geometry>
     </collision>
   </link>
@@ -154,15 +149,14 @@ and one fixed link will be added for the tip. -->
   <link name="link_4.0">
     <visual>
       <geometry>
-        <mesh filename="package://allegro_hand_description/meshes/link_0.0.STL"/>
+        <mesh filename="allegro_digit/stl/link_0.0.STL"/>
       </geometry>
       <material name="black"/>
     </visual>
     <collision>
       <geometry>
-        <box size="0.0196 0.0275 0.0164"/>
+        <mesh filename="allegro_digit/collision/link_0.0_merged.STL"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0.0082"/>
     </collision>
   </link>
   <joint name="joint_4.0" type="revolute">
@@ -175,15 +169,14 @@ and one fixed link will be added for the tip. -->
   <link name="link_5.0">
     <visual>
       <geometry>
-        <mesh filename="package://allegro_hand_description/meshes/link_1.0.STL"/>
+        <mesh filename="allegro_digit/stl/link_1.0.STL"/>
       </geometry>
       <material name="black"/>
     </visual>
     <collision>
       <geometry>
-        <box size="0.0196 0.0275 0.054"/>
+        <mesh filename="allegro_digit/collision/link_1.0_merged.STL"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0.027"/>
     </collision>
   </link>
   <joint name="joint_5.0" type="revolute">
@@ -196,15 +189,14 @@ and one fixed link will be added for the tip. -->
   <link name="link_6.0">
     <visual>
       <geometry>
-        <mesh filename="package://allegro_hand_description/meshes/link_2.0.STL"/>
+        <mesh filename="allegro_digit/stl/link_2.0.STL"/>
       </geometry>
       <material name="black"/>
     </visual>
     <collision>
       <geometry>
-        <box size="0.0196 0.0275 0.0384"/>
+        <mesh filename="allegro_digit/collision/link_2.0_merged.STL"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0.0192"/>
     </collision>
   </link>
   <joint name="joint_6.0" type="revolute">
@@ -217,15 +209,14 @@ and one fixed link will be added for the tip. -->
   <link name="link_7.0">
     <visual>
       <geometry>
-        <mesh filename="package://allegro_hand_description/meshes/link_3.0.STL"/>
+        <mesh filename="allegro_digit/stl/link_3.0.STL"/>
       </geometry>
       <material name="black"/>
     </visual>
     <collision>
       <geometry>
-        <box size="0.0196 0.0275 0.0267"/>
+        <mesh filename="allegro_digit/collision/link_3.0_merged.STL"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0.01335"/>
     </collision>
   </link>
   <joint name="joint_7.0" type="revolute">
@@ -238,7 +229,7 @@ and one fixed link will be added for the tip. -->
     <link name="link_7.0_tip">
     <visual>
       <geometry>
-        <mesh filename="package://allegro_hand_description/meshes/digit.STL"/>
+        <mesh filename="allegro_digit/stl/digit.STL"/>
       </geometry>
       <material name="white">
         <color rgba=".9 .9 .9 1"/>
@@ -246,7 +237,7 @@ and one fixed link will be added for the tip. -->
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://allegro_hand_description/meshes/digit.STL"/>
+        <mesh filename="allegro_digit/collision/digit.STL"/>
       </geometry>
     </collision>
   </link>
@@ -258,15 +249,14 @@ and one fixed link will be added for the tip. -->
   <link name="link_8.0">
     <visual>
       <geometry>
-        <mesh filename="package://allegro_hand_description/meshes/link_0.0.STL"/>
+        <mesh filename="allegro_digit/stl/link_0.0.STL"/>
       </geometry>
       <material name="black"/>
     </visual>
     <collision>
       <geometry>
-        <box size="0.0196 0.0275 0.0164"/>
+        <mesh filename="allegro_digit/collision/link_0.0_merged.STL"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0.0082"/>
     </collision>
   </link>
   <joint name="joint_8.0" type="revolute">
@@ -279,15 +269,14 @@ and one fixed link will be added for the tip. -->
   <link name="link_9.0">
     <visual>
       <geometry>
-        <mesh filename="package://allegro_hand_description/meshes/link_1.0.STL"/>
+        <mesh filename="allegro_digit/stl/link_1.0.STL"/>
       </geometry>
       <material name="black"/>
     </visual>
     <collision>
       <geometry>
-        <box size="0.0196 0.0275 0.054"/>
+        <mesh filename="allegro_digit/collision/link_1.0_merged.STL"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0.027"/>
     </collision>
   </link>
   <joint name="joint_9.0" type="revolute">
@@ -300,15 +289,14 @@ and one fixed link will be added for the tip. -->
   <link name="link_10.0">
     <visual>
       <geometry>
-        <mesh filename="package://allegro_hand_description/meshes/link_2.0.STL"/>
+        <mesh filename="allegro_digit/stl/link_2.0.STL"/>
       </geometry>
       <material name="black"/>
     </visual>
     <collision>
       <geometry>
-        <box size="0.0196 0.0275 0.0384"/>
+        <mesh filename="allegro_digit/collision/link_2.0_merged.STL"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0.0192"/>
     </collision>
   </link>
   <joint name="joint_10.0" type="revolute">
@@ -321,15 +309,14 @@ and one fixed link will be added for the tip. -->
   <link name="link_11.0">
     <visual>
       <geometry>
-        <mesh filename="package://allegro_hand_description/meshes/link_3.0.STL"/>
+        <mesh filename="allegro_digit/stl/link_3.0.STL"/>
       </geometry>
       <material name="black"/>
     </visual>
     <collision>
       <geometry>
-        <box size="0.0196 0.0275 0.0267"/>
+        <mesh filename="allegro_digit/collision/link_3.0_merged.STL"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0.01335"/>
     </collision>
   </link>
   <joint name="joint_11.0" type="revolute">
@@ -343,7 +330,7 @@ and one fixed link will be added for the tip. -->
     <link name="link_11.0_tip">
     <visual>
       <geometry>
-        <mesh filename="package://allegro_hand_description/meshes/digit.STL"/>
+        <mesh filename="allegro_digit/stl/digit.STL"/>
       </geometry>
       <material name="white">
         <color rgba=".9 .9 .9 1"/>
@@ -351,7 +338,7 @@ and one fixed link will be added for the tip. -->
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://allegro_hand_description/meshes/digit.STL"/>
+        <mesh filename="allegro_digit/collision/digit.STL"/>
       </geometry>
     </collision>
   </link>
@@ -365,9 +352,9 @@ and one fixed link will be added for the tip. -->
     <visual>
       <geometry>
         <!-- RIGHT -->
-        <mesh filename="package://allegro_hand_description/meshes/link_12.0_right.STL"/>
+        <mesh filename="allegro_digit/stl/link_12.0_right.STL"/>
         <!-- LEFT -->
-        <!-- <mesh filename="package://allegro_hand_description/meshes/link_12.0_left.STL" /> -->
+        <!-- <mesh filename="allegro_digit/collision/link_12.0_left.STL" /> -->
       </geometry>
       <material name="black">
         <color rgba=".2 .2 .2 1"/>
@@ -375,12 +362,8 @@ and one fixed link will be added for the tip. -->
     </visual>
     <collision>
       <geometry>
-        <box size="0.0358 0.034 0.0455"/>
+        <mesh filename="allegro_digit/collision/link_12.0_right_merged.STL"/>
       </geometry>
-      <!-- RIGHT -->
-      <origin rpy="0 0 0" xyz="-0.0179 0.009 0.0145"/>
-      <!-- LEFT -->
-      <!-- <origin rpy="0 0 0" xyz="${-0.0358/2+0.0} ${-.018/2} ${.029/2}"/> -->
     </collision>
   </link>
   <joint name="joint_12.0" type="revolute">
@@ -393,7 +376,7 @@ and one fixed link will be added for the tip. -->
   <link name="link_13.0">
     <visual>
       <geometry>
-        <mesh filename="package://allegro_hand_description/meshes/link_13.0.STL"/>
+        <mesh filename="allegro_digit/stl/link_13.0.STL"/>
       </geometry>
       <material name="black">
         <color rgba=".2 .2 .2 1"/>
@@ -401,9 +384,8 @@ and one fixed link will be added for the tip. -->
     </visual>
     <collision>
       <geometry>
-        <box size="0.0196 0.0275 0.0177"/>
+        <mesh filename="allegro_digit/collision/link_13.0_merged.STL"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0.00885"/>
     </collision>
   </link>
   <joint name="joint_13.0" type="revolute">
@@ -419,16 +401,15 @@ and one fixed link will be added for the tip. -->
   <link name="link_14.0">
     <visual>
       <geometry>
-        <mesh filename="package://allegro_hand_description/meshes/link_14.0.STL"/>
+        <mesh filename="allegro_digit/stl/link_14.0.STL"/>
       </geometry>
       <material name="black">
 		  	</material>
     </visual>
     <collision>
       <geometry>
-        <box size="0.0196 0.0275 0.0514"/>
+        <mesh filename="allegro_digit/stl/link_14.0_merged.STL"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0.0257"/>
     </collision>
   </link>
   <joint name="joint_14.0" type="revolute">
@@ -441,16 +422,15 @@ and one fixed link will be added for the tip. -->
   <link name="link_15.0">
     <visual>
       <geometry>
-        <mesh filename="package://allegro_hand_description/meshes/link_15.0.STL"/>
+        <mesh filename="allegro_digit/stl/link_15.0.STL"/>
       </geometry>
       <material name="black">
     	</material>
     </visual>
     <collision>
       <geometry>
-        <box size="0.0196 0.0275 0.0423"/>
+        <mesh filename="allegro_digit/stl/link_15.0_merged.STL"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0.02115"/>
     </collision>
   </link>
   <joint name="joint_15.0" type="revolute">
@@ -464,7 +444,7 @@ and one fixed link will be added for the tip. -->
   <link name="link_15.0_tip">
     <visual>
       <geometry>
-        <mesh filename="package://allegro_hand_description/meshes/digit.STL"/>
+        <mesh filename="allegro_digit/stl/digit.STL"/>
       </geometry>
       <material name="white">
         <color rgba=".9 .9 .9 1"/>
@@ -472,7 +452,7 @@ and one fixed link will be added for the tip. -->
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://allegro_hand_description/meshes/digit.STL"/>
+        <mesh filename="allegro_digit/collision/digit.STL"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </collision>
